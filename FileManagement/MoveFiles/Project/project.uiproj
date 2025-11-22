@@ -1,0 +1,6 @@
+{
+  "Name": "MoveFiles",
+  "ProjectType": "Process",
+  "Description": "Basic file-move automation that filters and moves files using clean, portable paths.\r\n",
+  "MainFile": "Main.xaml"
+}
