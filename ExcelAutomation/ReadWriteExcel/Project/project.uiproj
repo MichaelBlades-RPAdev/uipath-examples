@@ -1,0 +1,6 @@
+{
+  "Name": "ReadWriteExcel",
+  "ProjectType": "Process",
+  "Description": "Reads an input Excel file, cleans rows, and writes a new cleaned Excel file.",
+  "MainFile": "Main.xaml"
+}
