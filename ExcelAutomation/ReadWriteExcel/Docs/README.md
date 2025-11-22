@@ -2,23 +2,21 @@
 
 
 
-This example demonstrates a complete Excel data-processing pattern in UiPath:
+This example demonstrates a complete, production-style Excel processing pattern in UiPath:
 
 
 
-\- Read raw data from an input Excel file  
+\- Read structured data from an input Excel file
 
-\- Clean the data by removing incomplete rows  
+\- Validate and clean the rows
 
-\- Split the data into two outputs  
+\- Split results into \*\*valid\*\* and \*\*invalid\*\* datasets
 
-&nbsp; - \*\*OutputData.xlsx\*\* → valid rows  
-
-&nbsp; - \*\*ExcludedOutput.xlsx\*\* → rejected/incomplete rows  
+\- Export both to separate output files for auditing and review
 
 
 
-This is a common structure used in Accounts Payable, data validation, and ETL-style workflows.
+This workflow is intentionally simple but follows real-world RPA design conventions.
 
 
 
@@ -26,27 +24,28 @@ This is a common structure used in Accounts Payable, data validation, and ETL-st
 
 
 
-\## Folder structure
+\## Folder Structure
 
 
 
 ```text
 
-ExcelAutomation/
+ReadWriteExcel/
 
-&nbsp; ReadWriteExcel/
+\&nbsp; Project/                 UiPath project (Main.xaml)
 
-&nbsp;   Project/          
+\&nbsp; Data/                    Sample input and generated output
 
-&nbsp;   Data/             
+\&nbsp;   InputData.xlsx
 
-&nbsp;     InputData.xlsx
+\&nbsp;   CleanedOutputData.xlsx
 
-&nbsp;     CleanedOutputData.xlsx
+\&nbsp;   ExcludedOutputData.xlsx
 
-&nbsp;     ExcludedOutputData.xlsx
+\&nbsp; Docs/
 
-&nbsp;   Docs/
+\&nbsp;   README.md              (this file)
 
-&nbsp;     README.md
+
+
 
